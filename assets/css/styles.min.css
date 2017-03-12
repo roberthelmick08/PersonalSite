@@ -1,8 +1,11 @@
-
+body{
+  width: 100%;
+}
 input[type=checkbox] {
   display: none;
   visibility: hidden;
 }
+
 label {
   display: block;
   padding: 0.5em;
@@ -87,6 +90,7 @@ label::before {
 section {
   padding: 0 20px;
 }
+
 #toggleAboutMe:checked ~ .expandAboutMe, #toggleEducation:checked ~ .expandEducation,
 #toggleExperience:checked ~ .expandExperience,
 #toggleSkills:checked ~ .expandSkills{
@@ -133,7 +137,7 @@ div.jumbotron {
     margin-bottom: 0;
     background: url(../../assets/img/bgpersonalsite-2000x1017.png) 0;
     background-position: fixed;
-    min-height: 500px
+    min-height: 500px;
 }
 
 div.whiteBackground {
@@ -545,11 +549,25 @@ ul.nav.navbar-nav li:hover {
 .team-boxed h2 {
     font-weight: 700;
     margin-bottom: 40px;
-    padding-top: 40px;
+    padding-top: 20px;
     color: inherit
 }
 
 @media (max-width:500px) {
+    body{
+      margin: 0 !important;
+      padding: 0 !important;
+      border: 0 !important;
+      height: 100% !important;
+      width: 100% !important;
+    }
+    html{
+      margin: 0 !important;
+      padding: 0 !important;
+      border: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+    }
     .team-boxed h2 {
         margin-bottom: 25px;
         padding-top: 25px;
@@ -565,10 +583,6 @@ ul.nav.navbar-nav li:hover {
 
 .team-boxed .intro p {
     margin-bottom: 0
-}
-
-.team-boxed .people {
-    padding: 50px 0
 }
 
 .team-boxed .item .box {
